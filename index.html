@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>NASCET Calculator</title>
+
+	<link href="css/custom-css-bootstrap-magic-2020-06-09.css" rel="stylesheet">
+  
+ 	 <script LANGUAGE=javascript1.2>		 
+		function compute(form) {
+			 form.stenosis.value = ((1-(form.A.value/form.B.value))*100);
+		}
+
+	 	function ClearForm(form) {
+	    		form.A.value = "";
+		  	form.B.value = "";
+		  	form.stenosis.value = "";
+	 	}
+	</script>
+	
+</HEAD>
+
+<BODY>
+	<br>
+	<div class="card bg-dark text-white center" style="width:500px">
+		<div class="card-header" align="center">
+			<h4><b><u>NASCET Calculator</u></b></h4><img src="NASCET (2).jpg" alt="NASCET" width="200">
+		</div>
+
+		<div class="card-body">
+			<form>
+				<table align="center">
+					<tr>
+						<td width="120px"><p><b>A:</b></td> 
+						<td width="200px"><input name="A"></td> 
+					</tr>
+					<tr>
+						<td width="120px"><b>B:</b></td>
+						<td width="200px"><input name="B"></td>
+					</tr>
+				</table>
+				<div align="center">
+					<br>
+					<input onclick="compute(this.form)" type="button" value="Calculate"> 
+			  		<input onclick="ClearForm(this.form)" type="button" value="Clear Form"></b></p>
+				</div>
+		</div>
+		
+		<div class="card-footer">
+				<table align="center">
+					<tr>
+						<td width="120px"><p><b>Stenosis(%):</p></b></td> 
+						<td width="200px"><input name="stenosis"></td> 
+					</tr>
+				</table> 
+			</form>
+		</div>
+	</div>
+</BODY>
+
+</HTML>
