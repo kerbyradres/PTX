@@ -7,10 +7,11 @@
 	
 	<title>Pneumothorax Volume Calculator</title>
 
-  
+ 	<link href="css/custom-css-bootstrap-magic-2020-06-09.css" rel="stylesheet">
+
  	<script LANGUAGE=javascript1.2>		 
 		function compute(form) {
-			form.ptx.value = (4.2 + (4.7 * (form.A.value + form.B.value + form.C.value)));
+			form.ptx.value = form.A.value + form.B.value + form.C.value;
 		}
 
 	 	function ClearForm(form) {
