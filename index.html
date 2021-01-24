@@ -11,13 +11,13 @@
 
  	<script LANGUAGE=javascript1.2>		 
 		function compute(form) {
-			form.ptx.value = form.A.value+form.B.value+form.C.value;
+			form.ptx.value = 4.2 + (sum([form.A.value, form.B.value, form.C.value])*4.7);
 		}
 
 	 	function ClearForm(form) {
-	    		form.A.value = "";
-		  	form.B.value = "";
-			form.C.value = "";
+	    		form.A.value = "0";
+		  	form.B.value = "0";
+			form.C.value = "0";
 		  	form.ptx.value = "";
 	 	}
 	</script>
