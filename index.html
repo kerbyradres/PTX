@@ -11,7 +11,7 @@
   
  	 <script LANGUAGE=javascript1.2>		 
 		function compute(form) {
-			 form.ptx.value = (((form.A.value + form.B.value + form.C.value)*4.7)+4.2);
+			 form.ptx.value = 4.2 + (4.7 * (form.A.value + form.B.value + form.C.value));
 		}
 
 	 	function ClearForm(form) {
