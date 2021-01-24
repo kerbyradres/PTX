@@ -11,13 +11,14 @@
   
  	 <script LANGUAGE=javascript1.2>		 
 		function compute(form) {
-			 form.stenosis.value = ((1-(form.A.value/form.B.value))*100);
+			 form.ptx.value = (4.2+(form.A.value+form.B.value+form.C.value)*4.7);
 		}
 
 	 	function ClearForm(form) {
 	    		form.A.value = "";
 		  	form.B.value = "";
-		  	form.stenosis.value = "";
+			form.C.value = "";
+		  	form.ptx.value = "";
 	 	}
 	</script>
 	
@@ -41,6 +42,10 @@
 						<td width="120px"><b>B:</b></td>
 						<td width="200px"><input name="B"></td>
 					</tr>
+					<tr>
+						<td width="120px"><b>C:</b></td>
+						<td width="200px"><input name="C"></td>
+					</tr>
 				</table>
 				<div align="center">
 					<br>
@@ -52,8 +57,8 @@
 		<div class="card-footer">
 				<table align="center">
 					<tr>
-						<td width="120px"><p><b>PTX Volume(%):</p></b></td> 
-						<td width="200px"><input name="stenosis"></td> 
+						<td width="200px"><p><b>PTX Volume(%):</p></b></td> 
+						<td width="200px"><input name="ptx"></td> 
 					</tr>
 				</table> 
 			</form>
